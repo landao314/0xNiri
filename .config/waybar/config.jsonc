@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "height": 36,
     "margin-top": 3,
     "margin-left": 2,
@@ -22,12 +22,12 @@
         "privacy",
         "idle_inhibitor",
         // "group/misc",
-        // "custom/clipboard",
+         "custom/clipboard",
         // "custom/vkeyboard",
+	"network",
         "pulseaudio",
         "backlight",
         "battery",
-        "custom/screen-time",
         "tray",
         "custom/power"
     ],
@@ -112,9 +112,18 @@
         "on-click": "pkill fuzzel || fuzzel",
         "tooltip-format": "Launcher"
     },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
     "custom/clipboard": {
         "format": "󰅇",
-        "on-click": "pkill fuzzel || cliphist-fuzzel-img",
+        "on-click": "pkill fuzzel || /home/landao/.local/share/bin/cliphist-fuzzel-img",
         "tooltip-format": "Clipboard"
     },
     "custom/vkeyboard": {
@@ -140,14 +149,6 @@
         "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-middle": "close"
-    },
-    "custom/screen-time": {
-        "tooltip": true,
-        "format": " {text}",
-        // "exec": "niri-screen-time | grep 'time' | grep -oP '\\d+h\\s+\\d+m'",
-        "exec": "screen-time",
-        "interval": 60,
-        "return-type": "json"
     },
     "custom/notification": {
         "tooltip-format": "Notifications",

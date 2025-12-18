@@ -1,0 +1,9 @@
+[Default Applications]
+application/vnd.ms-publisher=SciTE.desktop
+application/x-zerosize=SciTE.desktop
+
+[Added Associations]
+application/vnd.ms-publisher=SciTE.desktop;
+application/json=SciTE.desktop;
+text/x-csrc=SciTE.desktop;
+application/x-zerosize=SciTE.desktop;

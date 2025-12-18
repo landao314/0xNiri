@@ -1,0 +1,11 @@
+[font]
+normal.family = "Jetbrains mono"
+normal.style = "Regular"
+bold.family = "Jetbrains mono"
+bold.style = "Bold"
+italic.family = "Jetbrains mono"
+italic.style = "Italic"
+size = 14.0
+offset = { x =0 , y =0}
+glyph_offset = { x = 0, y = 0}
+builtin_box_drawing = true
